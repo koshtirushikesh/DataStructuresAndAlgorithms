@@ -10,9 +10,11 @@ namespace AlgorithmPrograms
     {
         static void Main(string[] args)
         {
-            start:
+        start:
             Console.WriteLine("1.Anagram");
-            Console.Write("Enter Option");
+            Console.WriteLine("2.Prime number");
+
+            Console.Write("Enter Option: ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -20,8 +22,13 @@ namespace AlgorithmPrograms
                     Anagram anagram = new Anagram();
                     anagram.Check("heart", "earth");
                     break;
+                case 2:
+                    PrimeNumbers primeNumbers = new PrimeNumbers();
+                    primeNumbers.Check(1,1000);
+                    break;
+
             }
-            Console.WriteLine("Press {y]: continue or [n]:Exist");
+            Console.Write("\nPress {y]: continue or [n]:Exist  ->");
             char run = Convert.ToChar(Console.ReadLine());
             if (run == 'y')
                 goto start;
