@@ -9,6 +9,21 @@ namespace AlgorithmPrograms
 {
     internal class PrimeNumbers
     {
+        public bool CheckForAnagram(int number)
+        {
+            int inputNumber = number;
+            int revers = 0;
+            while (number !=0) 
+            {
+                int rem = number % 10;
+                revers = revers*10 + rem;
+                number = number/10;
+            }
+            if (revers == inputNumber) 
+                return true;
+            else 
+                return false;
+        }
         public void Check(int minNum,int maxNum)
         {
             Console.WriteLine("prime number: ");
@@ -23,7 +38,7 @@ namespace AlgorithmPrograms
                         break;
                     }
                 }
-                if(IsPrime)
+                if(IsPrime && CheckForAnagram(i))
                     Console.Write(i+" ");
             }
         }

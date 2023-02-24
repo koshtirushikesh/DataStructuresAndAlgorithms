@@ -12,7 +12,7 @@ namespace AlgorithmPrograms
         {
         start:
             Console.WriteLine("1.Anagram");
-            Console.WriteLine("2.Prime number");
+            Console.WriteLine("2.Prime number And Palindrome number");
 
             Console.Write("Enter Option: ");
             int option = Convert.ToInt32(Console.ReadLine());
