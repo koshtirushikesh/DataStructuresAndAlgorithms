@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AlgorithmPrograms
 {
@@ -13,7 +9,7 @@ namespace AlgorithmPrograms
         start:
             Console.WriteLine("1.Anagram");
             Console.WriteLine("2.Prime number And Palindrome number");
-
+            Console.WriteLine("3.Bubble Sorted");
             Console.Write("Enter Option: ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -24,9 +20,15 @@ namespace AlgorithmPrograms
                     break;
                 case 2:
                     PrimeNumbers primeNumbers = new PrimeNumbers();
-                    primeNumbers.Check(1,1000);
+                    primeNumbers.CheckAnagramAndPrime(1, 1000);
                     break;
-
+                case 3:
+                    BubbleSort bubblesort = new BubbleSort();
+                    bubblesort.Sort();
+                    break;
+                default:
+                    Console.WriteLine("Please enter the currect option");
+                    break;
             }
             Console.Write("\nPress {y]: continue or [n]:Exist  ->");
             char run = Convert.ToChar(Console.ReadLine());

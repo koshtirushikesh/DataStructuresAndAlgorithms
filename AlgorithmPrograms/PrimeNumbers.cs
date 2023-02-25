@@ -24,7 +24,7 @@ namespace AlgorithmPrograms
             else 
                 return false;
         }
-        public void Check(int minNum,int maxNum)
+        public void CheckAnagramAndPrime(int minNum,int maxNum)
         {
             Console.WriteLine("prime number: ");
             for (int i = minNum; i <= maxNum; i++)
