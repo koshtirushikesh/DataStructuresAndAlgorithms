@@ -9,7 +9,8 @@ namespace AlgorithmPrograms
         start:
             Console.WriteLine("1.Anagram");
             Console.WriteLine("2.Prime number And Palindrome number");
-            Console.WriteLine("3.Bubble Sorted");
+            Console.WriteLine("3.Bubble Sort");
+            Console.WriteLine("4.Insertion Sort");
             Console.Write("Enter Option: ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -25,6 +26,10 @@ namespace AlgorithmPrograms
                 case 3:
                     BubbleSort bubblesort = new BubbleSort();
                     bubblesort.Sort();
+                    break;
+                case 4:
+                    InsertionSort insertionsort = new InsertionSort();
+                    insertionsort.Sort();
                     break;
                 default:
                     Console.WriteLine("Please enter the currect option");
