@@ -11,6 +11,7 @@ namespace AlgorithmPrograms
             Console.WriteLine("2.Prime number And Palindrome number");
             Console.WriteLine("3.Bubble Sort");
             Console.WriteLine("4.Insertion Sort");
+            Console.WriteLine("5.Merge Sort");
             Console.Write("Enter Option: ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -30,6 +31,10 @@ namespace AlgorithmPrograms
                 case 4:
                     InsertionSort insertionsort = new InsertionSort();
                     insertionsort.Sort();
+                    break;
+                case 5:
+                    MergeSortClass mergeSort = new MergeSortClass();
+                    mergeSort.Sort();
                     break;
                 default:
                     Console.WriteLine("Please enter the currect option");
