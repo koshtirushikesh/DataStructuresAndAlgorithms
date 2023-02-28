@@ -12,6 +12,7 @@ namespace AlgorithmPrograms
             Console.WriteLine("3.Bubble Sort");
             Console.WriteLine("4.Insertion Sort");
             Console.WriteLine("5.Merge Sort");
+            Console.WriteLine("6.Binary Search");
             Console.Write("Enter Option: ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -35,6 +36,10 @@ namespace AlgorithmPrograms
                 case 5:
                     MergeSortClass mergeSort = new MergeSortClass();
                     mergeSort.Sort();
+                    break;
+                case 6:
+                    Search search = new Search();
+                    search.searchMethord();
                     break;
                 default:
                     Console.WriteLine("Please enter the currect option");
